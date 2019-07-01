@@ -39,6 +39,10 @@ p5.Geometry = function(detailX, detailY, callback) {
   // a 2D array containing edge connectivity pattern for create line vertices
   //based on faces for most objects;
   this.edges = [];
+
+  // uMVMatrix used while drawing the geometry
+  this.uMVMatrix = new p5.Matrix();
+
   this.detailX = detailX !== undefined ? detailX : 1;
   this.detailY = detailY !== undefined ? detailY : 1;
 
